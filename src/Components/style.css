@@ -1,0 +1,859 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .App{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  
+  @media(max-width:480px){
+    .App{
+      width: 100%;
+      height: auto;
+      display: flex;
+      background-color: #1e1e1e;
+    }
+  }
+  
+  
+  
+  /*  SITEBAR start */
+  
+  .Sitebar{
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+  }
+  
+  .btns{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .btns button{
+    width: 80%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    cursor: pointer;
+  }
+  
+  .all{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .btns button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+  }
+  
+  .Sitebar img{
+    width: 90%;
+    height: 170px;
+    cursor: pointer;
+  }
+  
+  .Sitebar h1{
+    margin-bottom: 100px;
+    color: #fff;
+  }
+  
+  /* SITEBAR end */
+  
+  @media screen  and (max-width:480px){
+    /*  SITEBAR start */
+  
+  .Sitebar{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    background-color: #333;
+  }
+  
+  .btns{
+    width: 100%;
+    height: 100px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .all{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+    gap: 15px;
+   
+  }
+  
+  .btns button{
+    width: 85px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    cursor: pointer;
+  }
+  
+  .btns button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .Sitebar img{
+    width: 0;
+    height: 0;
+    cursor: pointer;
+  }
+  
+  .Sitebar h1{
+    margin-bottom: 100px;
+    color: #fff;
+    font-size: 0;
+  }
+  }
+  
+  
+  /* MAIN start */
+  
+  .Main{
+    width: 85%;
+    height: 1150px;
+    background-color: #1e1e1e;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width:480px) {
+  
+    .Main{
+    width: 100%;
+    height: auto;
+    background-color: #1e1e1e;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  }
+  
+  /* MAIN end */
+  
+  
+  
+  
+  /* PUBG start */
+  
+  .Pubg{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding-top: 100px;
+  }
+  
+  .Pubg table{
+    width: 60%;
+  }
+  
+  .Pubg th{
+    width: 12%;
+    height: 27px;
+  }
+  
+  .Pubg td{
+    height: 30px;
+  }
+  .Pubg button{
+    width: 90%;
+    height: 100%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  }
+  /* PUNG end */
+  
+  
+  
+  @media(max-width:480px){
+    /* PUBG start */
+  
+  .Pubg{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Pubg table{
+    width: 90%;
+  }
+  
+  .Pubg th{
+    width: 12%;
+    height: 27px;
+  }
+  
+  .Pubg td{
+    height: 30px;
+  }
+  .Pubg button{
+    width: 90%;
+    height: 100%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  }
+  /* PUNG end */
+  
+  
+  
+  }
+  
+  
+  /* Free Fire start */
+  
+  .FreeFire{
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .FreeFire table{
+    width: 70%;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .FreeFire th{
+    width: 12%;
+    height: 40px;
+  }
+  
+  .FreeFire td{
+    height: 35px;
+  }
+  
+  .FreeFire button{
+    width: 90%;
+    height: 35px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  }
+  
+  /* Free Fire end */
+  
+  
+  @media (max-width:480px) {
+    /* Free Fire start */
+  
+  .FreeFire{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: #1e1e1e;
+    /* position: absolute;
+    top: 0;
+    bottom: 0; */
+    /* position: fixed; */
+  }
+  
+  .FreeFire table{
+    width: 90%;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .FreeFire th{
+    width: 10%;
+    height: 40px;
+    font-size: 12px;
+  }
+  
+  .FreeFire td{
+    height: 35px;
+  }
+  
+  .FreeFire button{
+    width: 90%;
+    height: 35px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  }
+  
+  /* Free Fire end */
+  
+    
+  }
+  
+  
+  /* TELEGRAM start */
+  
+  .Telegram{
+    width: 100%;
+    height: 100vh ;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Telegram table{
+    width: 70%;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .Telegram th{
+    width: 12%;
+    height: 40px;
+  }
+  
+  .Telegram td{
+    height: 35px;
+  }
+  
+  .Telegram button{
+    width: 90%;
+    height: 35px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  }
+  
+  
+  
+  /* TELEGRAM end */
+  
+  
+  @media (max-width:480px) {
+    /* TELEGRAM start */
+  
+  .Telegram{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .Telegram table{
+    width: 95%;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .Telegram th{
+    width: 15%;
+    height: 40px;
+    font-size: 12px;
+  }
+  
+  .Telegram td{
+    height: 35px;
+    font-size: 12px;
+  }
+  
+  .Telegram button{
+    width: 90%;
+    height: 35px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  }
+  
+  
+  
+  /* TELEGRAM end */
+  
+  
+    
+  }
+  /* INSTAGRAM start */
+  .Instagram{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+  }
+  
+  .Instagram table{
+    width: 70%;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .Instagram th{
+    width: 12%;
+    height: 40px;
+  }
+  
+  .Instagram td{
+    height: 35px;
+  }
+  
+  .insta{
+    width: 90%;
+    height: 35px ;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  }
+  /* INSTAGRAM end */
+  
+  
+  @media (max-width:480px) {
+  
+    /* INSTAGRAM start */
+  .Instagram{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .Instagram table{
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .Instagram th{
+    width: 14%;
+    height: 40px;
+  }
+  
+  .Instagram td{
+    height: 35px;
+  }
+  
+  .insta{
+    width: 90%;
+    height: 35px ;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  }
+  /* INSTAGRAM end */
+  
+  
+    
+  }
+  
+  
+  .Home{
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .Home img{
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width:480px) {
+    
+  .Home{
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .Home img{
+    width: 100%;
+    height: 100vh;
+  }
+    
+  }
+  
+  
+  .pubgg-cart{
+    width: 85%;
+    height: 1150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    z-index: -1;
+  
+    color: #000;
+  }
+  
+  .freee-cart{
+    width: 85%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    z-index: -1;
+  }
+  
+  .telegramm-cart{
+    width: 85%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    z-index: -1;
+  }
+  
+  .instagramm-cart{
+    width: 85%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    z-index: -1;
+  }
+
+  .pay{
+    width: 85%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    /* z-index: -1; */
+  }
+  
+  form{
+    width: 400px;
+    height: 800px !important;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px !important;
+    position: absolute;
+    
+
+  } 
+
+  
+  form span{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    padding-top: 4px;
+    color: #000;
+  }
+  
+  form input{
+  width: 300px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 18px;
+  }
+  
+  
+  
+  .freee-cart button{
+    width: 300px;
+    height: 50px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+  
+  
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .instagramm-cart button{
+    width: 300px;
+    height: 50px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+  
+  
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  
+  }
+  
+  .pubgg-cart button{
+    width: 300px;
+    height: 50px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+  
+  
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  
+  }
+  
+  .telegramm-cart button{
+    width: 300px;
+    height: 50px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+  
+  
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  /* Basket end */
+  
+  
+  @media (max-width:480px) {
+  
+    .pubgg-cart{
+      width: 100%;
+      height: 1100px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(15px);
+      z-index: -1;
+    
+      color: #000;
+    }
+    
+    .freee-cart{
+      width: 100%;
+      height: 1000px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(15px);
+      z-index: -1;
+    }
+    
+    .telegramm-cart{
+      width: 100%;
+      height: 1000px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(15px);
+      z-index: -1;
+    }
+    
+    .instagramm-cart{
+      width: 100%;
+      height: 1000px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(15px);
+      z-index: -1;
+    }
+    
+    form{
+      width: 340px !important;
+      height: 700px !important;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px !important;
+      position:absolute ;
+      top: 100px;
+    }
+    
+    .pay{
+      width: 340px !important;
+      height: 600px !important;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px !important;
+      position:absolute ;
+      top: 100px;
+    }
+    
+    form input{
+    width: 300px !important;
+      height: 40px !important;
+      padding-left: 20px;
+      font-size: 14px !important;
+    }
+    
+    
+    
+    .freee-cart button{
+      width: 300px;
+      height: 60px;
+      background-color: #1e1e1e;
+      border: none;
+      border-radius: 15px;
+    
+    
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    
+    .instagramm-cart button{
+        width: 300px;
+        height: 60px;
+      background-color: #1e1e1e;
+      border: none;
+      border-radius: 15px;
+    
+    
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+    
+    }
+    
+    .pubgg-cart button{
+        width: 300px;
+        height: 60px;
+      background-color: #1e1e1e;
+      border: none;
+      border-radius: 15px;
+    
+    
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+    
+    }
+    
+    .telegramm-cart button{
+        width: 300px;
+        height: 60px;
+      background-color: #1e1e1e;
+      border: none;
+      border-radius: 15px;
+    
+    
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    
+    
+  }
+
+  .karta{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .karta span{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    padding-top: 4px;
+    color: #000;
+  }
