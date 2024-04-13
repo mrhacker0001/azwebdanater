@@ -86,10 +86,10 @@ export function Instagram() {
         tarif: ' '
       });
       toast.success("Ma'lumotlar muvaffaqiyatli yuborildi!");
-  } catch (error) {
-    console.error("xatolik yuz berdi:", error);
-    toast.error("Ma'lumotlarni yuborishda xatolik yuz berdi");
-  }
+    } catch (error) {
+      console.error("xatolik yuz berdi:", error);
+      toast.error("Ma'lumotlarni yuborishda xatolik yuz berdi");
+    }
   };
 
 
@@ -109,126 +109,127 @@ export function Instagram() {
 
   const handleSubmitPhoto = async (e) => {
     if (e) e.preventDefault(); // e mavjudligini tekshiramiz
-  
+
     try {
       const token = '6857985324:AAG1j834I1SM_jZTLRuHXmDqeKgKkaZWD-8';
       const chatId = '@registration008';
-  
+
       const formData = new FormData();
       formData.append('photo', formdata.rasm); // Rasmni FormData ga qo'shamiz
-  
+
       await axios.post(`https://api.telegram.org/bot${token}/sendPhoto?chat_id=${chatId}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data' // Bu rasmni yuborish uchun kerak bo'lgan header
         }
       });
-    
+
       setFormdata({
         ...formdata,
-        rasm:'',
+        rasm: '',
       })
     } catch (error) {
 
     }
   }
   return (
-    <>    <ToastContainer/>
-    <div className='Instagram'>
-    <table border={1}>
-      <thead>
-          <tr>
-          <th>Murojaat uchun:   Telefon raqam: +998 93 217 08 15  </th>
-          <th>Murojaat uchun:   Telegram orqali: @azwebdanater  </th>
-          </tr>
-      </thead>
-      </table>
-      <table border={1}>
-        <thead>
-          <tr>
-            <th>Obunachi miqdori</th>
-            <th>Obunachi narxi</th>
-            <th>Obunachi ta'rifi</th>
-            <th>UZDANATER.uz</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map(item => (
-            <tr key={item.id}>
-              <td>{item.miqdor}</td>
-              <td>{item.narx}</td>
-              <td>{item.tarif}</td>
-              <td>
-                <button className='insta' onClick={() => { document.querySelector('.instagramm-cart').style.zIndex = 1; addToCart(item.id); setFormdata({ ...formdata, miqdor: item.miqdor, narx: item.narx, tarif: item.tarif }) }}>Buyurtma berish</button>
-              </td>
+    <>    <ToastContainer />
+      <div className='Instagram'>
+        <table border={1}>
+          <thead>
+            <tr>
+              <th>Murojaat uchun:   Telefon raqam: +998 93 217 08 15  </th>
+              <th>Murojaat uchun:   Telegram orqali: @azwebdanater  </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+        </table>
+        <table border={1}>
+          <thead>
+            <tr>
+              <th>Obunachi miqdori</th>
+              <th>Obunachi narxi</th>
+              <th>Obunachi ta'rifi</th>
+              <th>UZDANATER.uz</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map(item => (
+              <tr key={item.id}>
+                <td>{item.miqdor}</td>
+                <td>{item.narx}</td>
+                <td>{item.tarif}</td>
+                <td>
+                  <button className='insta' onClick={() => { document.querySelector('.instagramm-cart').style.zIndex = 1; addToCart(item.id); setFormdata({ ...formdata, miqdor: item.miqdor, narx: item.narx, tarif: item.tarif }) }}>Buyurtma berish</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
-      
 
 
 
-      <div className="instagramm-cart">
-        <form onSubmit={handleSubmit}>
-          <h1>Instagram</h1>
-          <label>
-            <input
-              type="text"
-              name="ism"
-              placeholder="Ismingizni kiriting"
-              value={formdata.ism}
-              onChange={handlechange}
-            />
-          </label>
-          <label>
-            <input
-              type="number"
-              name="tel"
-              placeholder="Raqamingizni kiriting"
-              value={formdata.tel}
 
-              onChange={handlechange}
-            />
-          </label>
-          <label>
-            <input
-              type="text"
-              name="link"
-              placeholder="link kiriting"
-              value={formdata.link}
-              onChange={handlechange}
-            />
-          </label>
-          <label>
-            <input
-              type="text"
-              name="miqdor"
-              placeholder="Miqdor kiriting"
-              value={formdata.miqdor}
-              onChange={handlechange}
-            />
-          </label>
-          <span>To'lov chekini kiriting  </span>
-          <label>
-  <input
-    type="file"
-    name="rasm"
-    onChange={(e) => setFormdata({ ...formdata, rasm: e.target.files[0] })} // Rasmni o'qib olamiz
-  />
-</label>
-          <div className="karta">
-          <span>Narxi: {umumiynarx}</span>
-          <span>Ta'rif: {formdata.tarif}</span>
-          <span>Karta raqam: 9860 0801 8648 5357</span>
+        <div className="instagramm-cart">
+          <form onSubmit={handleSubmit}>
+            <h1>Instagram</h1>
+            <label>
+              <input
+                type="text"
+                name="ism"
+                placeholder="Ismingizni kiriting"
+                value={formdata.ism}
+                onChange={handlechange}
+              />
+            </label>
+            <label>
+              <input
+                type="number"
+                name="tel"
+                placeholder="Raqamingizni kiriting"
+                value={formdata.tel}
 
-          </div>
-          <button type="submit" onClick={() => {document.querySelector('.instagramm-cart').style.zIndex = -1; handleSubmitPhoto()}}>Yuborish</button>
-          <button type='button' onClick={handleCloseClick}>Yopish</button>
-        </form>
+                onChange={handlechange}
+              />
+            </label>
+            <label>
+              <input
+                type="text"
+                name="link"
+                placeholder="link kiriting"
+                value={formdata.link}
+                onChange={handlechange}
+              />
+            </label>
+            <label>
+              <input
+                type="text"
+                name="miqdor"
+                placeholder="Miqdor kiriting"
+                value={formdata.miqdor}
+                onChange={handlechange}
+              />
+            </label>
+            <div className="karta">
+              <span>Narxi: {umumiynarx} USD</span>
+              <span>Ta'rif: {formdata.tarif}</span>
+              <span>Karta raqam: 9860 0801 8648 5357</span>
+
+            </div>
+            <span>To'lov chekini kiriting  </span>
+            <label>
+              <input
+                type="file"
+                name="rasm"
+                onChange={(e) => setFormdata({ ...formdata, rasm: e.target.files[0] })} // Rasmni o'qib olamiz
+              />
+            </label>
+
+            <button type="submit" onClick={() => { document.querySelector('.instagramm-cart').style.zIndex = -1; handleSubmitPhoto() }}>Yuborish</button>
+            <button type='button' onClick={handleCloseClick}>Yopish</button>
+          </form>
+        </div>
+
       </div>
-
-    </div>
     </>
 
   )

@@ -1,97 +1,212 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .App{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+@media(max-width:480px) {
+  .App {
     width: 100%;
     height: auto;
     display: flex;
-  }
-  
-  @media(max-width:480px){
-    .App{
-      width: 100%;
-      height: auto;
-      display: flex;
-      background-color: #1e1e1e;
-    }
-  }
-  
-  
-  
-  /*  SITEBAR start */
-  
-  .Sitebar{
-    width: 15%;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-  }
-  
-  .btns{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .btns button{
-    width: 80%;
-    height: 60px;
-    border: none;
-    border-radius: 10px;
     background-color: #1e1e1e;
-    cursor: pointer;
   }
-  
-  .all{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+}
+
+
+
+/*  SITEBAR start */
+
+.Sitebar {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
+
+
+
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .btns button a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 22px;
+
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .Sitebar img{
-    width: 90%;
-    height: 170px;
-    cursor: pointer;
+}
+
+.btns {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.btns button {
+  width: 80%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  cursor: pointer;
+}
+
+/* Azwbdanater animation start*/
+
+.loader {
+  margin-bottom: 40px;
+}
+
+.loader span {
+  font-size: 62px;
+  text-transform: uppercase;
+  color: aqua;
+  font-weight: bold;
+  animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate {
+  10% {
+    color: yellow;
   }
-  
-  .Sitebar h1{
-    margin-bottom: 100px;
-    color: #fff;
+
+  20% {
+    color: green;
   }
-  
-  /* SITEBAR end */
-  
-  @media screen  and (max-width:480px){
-    /*  SITEBAR start */
-  
-  .Sitebar{
+
+  30% {
+    color: pink;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: orange;
+  }
+
+  60% {
+    color: darkblue;
+  }
+
+  70% {
+    color: darkred;
+  }
+
+  80% {
+    color: yellowgreen;
+  }
+
+  90% {
+    color: orangered;
+  }
+
+  100% {
+    color: aqua;
+  }
+}
+
+.loader span:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.loader span:nth-child(4) {
+  animation-delay: 1.4s;
+}
+
+.loader span:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+.loader span:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+.loader span:nth-child(7) {
+  animation-delay: 2s;
+}
+
+.loader span:nth-child(8) {
+  animation-delay: 2.2s;
+}
+
+.loader span:nth-child(9) {
+  animation-delay: 2.5s;
+}
+
+.loader span:nth-child(10) {
+  animation-delay: 2.6s;
+}
+
+/* Azwbdanater animation end*/
+
+
+
+.all {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.btns button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+.Sitebar img {
+  width: 90%;
+  height: 170px;
+  cursor: pointer;
+}
+
+.Sitebar h1 {
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+
+/* SITEBAR end */
+
+@media screen and (max-width:480px) {
+  /*  SITEBAR start */
+
+  .Sitebar {
     width: 100%;
     height: 100px;
     position: fixed;
     display: flex;
     background-color: #333;
   }
-  
-  .btns{
+
+  .btns {
     width: 100%;
     height: 100px;
     display: flex !important;
@@ -101,18 +216,18 @@
     top: 0;
     left: 0;
   }
-  
-  .all{
+
+  .all {
     display: flex !important;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  
+
     gap: 15px;
-   
+
   }
-  
-  .btns button{
+
+  .btns button {
     width: 85px;
     height: 50px;
     border: none;
@@ -120,42 +235,132 @@
     background-color: #1e1e1e;
     cursor: pointer;
   }
-  
-  .btns button a{
+
+  .btns button span {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: bold;
+    animation: animate 5s ease-in-out infinite;
+  }
+
+  @keyframes animate {
+    10% {
+      color: yellow;
+    }
+
+    20% {
+      color: green;
+    }
+
+    30% {
+      color: pink;
+    }
+
+    40% {
+      color: blue;
+    }
+
+    50% {
+      color: orange;
+    }
+
+    60% {
+      color: darkblue;
+    }
+
+    70% {
+      color: darkred;
+    }
+
+    80% {
+      color: yellowgreen;
+    }
+
+    90% {
+      color: orangered;
+    }
+
+    100% {
+      color: aqua;
+    }
+  }
+
+  .btns>button>span:nth-child(1) {
+    animation-delay: 0.8s;
+  }
+
+  .btns>button>span:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  .btns>button>span:nth-child(3) {
+    animation-delay: 1.2s;
+  }
+
+  .btns>button>span:nth-child(4) {
+    animation-delay: 1.4s;
+  }
+
+  .btns>button>span:nth-child(5) {
+    animation-delay: 1.6s;
+  }
+
+  .btns>button>span:nth-child(6) {
+    animation-delay: 1.8s;
+  }
+
+  .btns>button>span:nth-child(7) {
+    animation-delay: 2s;
+  }
+
+  .btns>button>span:nth-child(8) {
+    animation-delay: 2.2s;
+  }
+
+  .btns>button>span:nth-child(9) {
+    animation-delay: 2.5s;
+  }
+
+  .btns>button>span:nth-child(10) {
+    animation-delay: 2.6s;
+  }
+
+  .btns button a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
   }
-  
-  .Sitebar img{
+
+  .Sitebar img {
     width: 0;
     height: 0;
     cursor: pointer;
   }
-  
-  .Sitebar h1{
+
+  .loader span {
     margin-bottom: 100px;
     color: #fff;
     font-size: 0;
   }
-  }
-  
-  
-  /* MAIN start */
-  
-  .Main{
-    width: 85%;
-    height: 1150px;
-    background-color: #1e1e1e;
-    margin-left: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  @media screen and (max-width:480px) {
-  
-    .Main{
+}
+
+
+/* MAIN start */
+
+.Main {
+  width: 85%;
+  height: 1150px;
+  background-color: #1e1e1e;
+  margin-left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:480px) {
+
+  .Main {
     width: 100%;
     height: auto;
     background-color: #1e1e1e;
@@ -164,57 +369,59 @@
     align-items: center;
     justify-content: center;
   }
-  }
-  
-  /* MAIN end */
-  
-  
-  
-  
+}
+
+/* MAIN end */
+
+
+
+
+/* PUBG start */
+
+.Pubg {
+  width: 100%;
+  height: auto;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding-top: 100px;
+}
+
+.Pubg table {
+  width: 60%;
+}
+
+.Pubg th {
+  width: 12%;
+  height: 27px;
+}
+
+.Pubg td {
+  height: 30px;
+}
+
+.Pubg button {
+  width: 90%;
+  height: 100%;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+/* PUNG end */
+
+
+
+@media(max-width:480px) {
   /* PUBG start */
-  
-  .Pubg{
-    width: 100%;
-    height: auto;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #1e1e1e;
-    padding-top: 100px;
-  }
-  
-  .Pubg table{
-    width: 60%;
-  }
-  
-  .Pubg th{
-    width: 12%;
-    height: 27px;
-  }
-  
-  .Pubg td{
-    height: 30px;
-  }
-  .Pubg button{
-    width: 90%;
-    height: 100%;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  
-  }
-  /* PUNG end */
-  
-  
-  
-  @media(max-width:480px){
-    /* PUBG start */
-  
-  .Pubg{
+
+  .Pubg {
     width: 100%;
     height: auto;
     color: #fff;
@@ -223,79 +430,81 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .Pubg table{
+
+  .Pubg table {
     width: 90%;
   }
-  
-  .Pubg th{
+
+  .Pubg th {
     width: 12%;
     height: 27px;
   }
-  
-  .Pubg td{
+
+  .Pubg td {
     height: 30px;
   }
-  .Pubg button{
+
+  .Pubg button {
     width: 90%;
     height: 100%;
     background-color: #ffffff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-  
+
   }
+
   /* PUNG end */
-  
-  
-  
-  }
-  
-  
+
+
+
+}
+
+
+/* Free Fire start */
+
+.FreeFire {
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FreeFire table {
+  width: 70%;
+  color: #fff;
+  text-align: center;
+}
+
+.FreeFire th {
+  width: 12%;
+  height: 40px;
+}
+
+.FreeFire td {
+  height: 35px;
+}
+
+.FreeFire button {
+  width: 90%;
+  height: 35px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+/* Free Fire end */
+
+
+@media (max-width:480px) {
   /* Free Fire start */
-  
-  .FreeFire{
-    width: 100%;
-    height: 100vh;
-    background-color: #1e1e1e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .FreeFire table{
-    width: 70%;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .FreeFire th{
-    width: 12%;
-    height: 40px;
-  }
-  
-  .FreeFire td{
-    height: 35px;
-  }
-  
-  .FreeFire button{
-    width: 90%;
-    height: 35px;
-    background-color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  
-  }
-  
-  /* Free Fire end */
-  
-  
-  @media (max-width:480px) {
-    /* Free Fire start */
-  
-  .FreeFire{
+
+  .FreeFire {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -309,85 +518,85 @@
     bottom: 0; */
     /* position: fixed; */
   }
-  
-  .FreeFire table{
+
+  .FreeFire table {
     width: 90%;
     color: #fff;
     text-align: center;
   }
-  
-  .FreeFire th{
+
+  .FreeFire th {
     width: 10%;
     height: 40px;
     font-size: 12px;
   }
-  
-  .FreeFire td{
+
+  .FreeFire td {
     height: 35px;
   }
-  
-  .FreeFire button{
+
+  .FreeFire button {
     width: 90%;
     height: 35px;
     background-color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-  
+
   }
-  
+
   /* Free Fire end */
-  
-    
-  }
-  
-  
+
+
+}
+
+
+/* TELEGRAM start */
+
+.Telegram {
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Telegram table {
+  width: 70%;
+  color: #fff;
+  text-align: center;
+}
+
+.Telegram th {
+  width: 12%;
+  height: 40px;
+}
+
+.Telegram td {
+  height: 35px;
+}
+
+.Telegram button {
+  width: 90%;
+  height: 35px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+
+
+/* TELEGRAM end */
+
+
+@media (max-width:480px) {
   /* TELEGRAM start */
-  
-  .Telegram{
-    width: 100%;
-    height: 100vh ;
-    background-color: #1e1e1e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .Telegram table{
-    width: 70%;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .Telegram th{
-    width: 12%;
-    height: 40px;
-  }
-  
-  .Telegram td{
-    height: 35px;
-  }
-  
-  .Telegram button{
-    width: 90%;
-    height: 35px;
-    background-color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  
-  }
-  
-  
-  
-  /* TELEGRAM end */
-  
-  
-  @media (max-width:480px) {
-    /* TELEGRAM start */
-  
-  .Telegram{
+
+  .Telegram {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -395,83 +604,85 @@
     justify-content: center;
     margin-top: 100px;
   }
-  
-  .Telegram table{
+
+  .Telegram table {
     width: 95%;
     color: #fff;
     text-align: center;
   }
-  
-  .Telegram th{
+
+  .Telegram th {
     width: 15%;
     height: 40px;
     font-size: 12px;
   }
-  
-  .Telegram td{
+
+  .Telegram td {
     height: 35px;
     font-size: 12px;
   }
-  
-  .Telegram button{
+
+  .Telegram button {
     width: 90%;
     height: 35px;
     background-color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-  
+
   }
-  
-  
-  
+
+
+
   /* TELEGRAM end */
-  
-  
-    
-  }
+
+
+
+}
+
+/* INSTAGRAM start */
+.Instagram {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+}
+
+.Instagram table {
+  width: 70%;
+  color: #fff;
+  text-align: center;
+}
+
+.Instagram th {
+  width: 12%;
+  height: 40px;
+}
+
+.Instagram td {
+  height: 35px;
+}
+
+.insta {
+  width: 90%;
+  height: 35px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+/* INSTAGRAM end */
+
+
+@media (max-width:480px) {
+
   /* INSTAGRAM start */
-  .Instagram{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #1e1e1e;
-  }
-  
-  .Instagram table{
-    width: 70%;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .Instagram th{
-    width: 12%;
-    height: 40px;
-  }
-  
-  .Instagram td{
-    height: 35px;
-  }
-  
-  .insta{
-    width: 90%;
-    height: 35px ;
-    background-color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  
-  }
-  /* INSTAGRAM end */
-  
-  
-  @media (max-width:480px) {
-  
-    /* INSTAGRAM start */
-  .Instagram{
+  .Instagram {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -481,66 +692,227 @@
     justify-content: center;
     margin-top: 100px;
   }
-  
-  .Instagram table{
+
+  .Instagram table {
     width: 90%;
     color: #fff;
     text-align: center;
     font-size: 12px;
   }
-  
-  .Instagram th{
+
+  .Instagram th {
     width: 14%;
     height: 40px;
   }
-  
-  .Instagram td{
+
+  .Instagram td {
     height: 35px;
   }
-  
-  .insta{
+
+  .insta {
     width: 90%;
-    height: 35px ;
+    height: 35px;
     background-color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-  
+
   }
+
   /* INSTAGRAM end */
-  
-  
-    
-  }
-  
-  
-  .Home{
+
+
+
+}
+
+
+.Home {
+  width: 100%;
+  height: 100vh;
+}
+
+.Home img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width:480px) {
+
+  .Home {
     width: 100%;
     height: 100vh;
   }
-  
-  .Home img{
-    width: 100%;
-    height: 100%;
-  }
-  @media (max-width:480px) {
-    
-  .Home{
+
+  .Home img {
     width: 100%;
     height: 100vh;
   }
-  
-  .Home img{
+
+}
+
+
+.pubgg-cart {
+  width: 85%;
+  height: 1150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  z-index: -1;
+
+  color: #000;
+}
+
+.freee-cart {
+  width: 85%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  z-index: -1;
+}
+
+.telegramm-cart {
+  width: 85%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  z-index: -1;
+}
+
+.instagramm-cart {
+  width: 85%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  z-index: -1;
+}
+
+.pay {
+  width: 85%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  /* z-index: -1; */
+}
+
+form {
+  width: 400px;
+  height: 800px !important;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px !important;
+  position: absolute;
+
+
+}
+
+
+form span {
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #000;
+  padding-top: 4px;
+  color: #000;
+}
+
+form input {
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+
+
+.freee-cart button {
+  width: 300px;
+  height: 50px;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 15px;
+
+
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.instagramm-cart button {
+  width: 300px;
+  height: 50px;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 15px;
+
+
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+
+}
+
+.pubgg-cart button {
+  width: 300px;
+  height: 50px;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 15px;
+
+
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+
+}
+
+.telegramm-cart button {
+  width: 300px;
+  height: 50px;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 15px;
+
+
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Basket end */
+
+
+@media (max-width:480px) {
+
+  .pubgg-cart {
     width: 100%;
-    height: 100vh;
-  }
-    
-  }
-  
-  
-  .pubgg-cart{
-    width: 85%;
-    height: 1150px;
+    height: 1100px;
     position: absolute;
     top: 0;
     right: 0;
@@ -549,39 +921,13 @@
     justify-content: center;
     backdrop-filter: blur(15px);
     z-index: -1;
-  
+
     color: #000;
   }
-  
-  .freee-cart{
-    width: 85%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(15px);
-    z-index: -1;
-  }
-  
-  .telegramm-cart{
-    width: 85%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(15px);
-    z-index: -1;
-  }
-  
-  .instagramm-cart{
-    width: 85%;
-    height: 100vh;
+
+  .freee-cart {
+    width: 100%;
+    height: 1000px;
     position: absolute;
     top: 0;
     right: 0;
@@ -592,9 +938,9 @@
     z-index: -1;
   }
 
-  .pay{
-    width: 85%;
-    height: 100vh;
+  .telegramm-cart {
+    width: 100%;
+    height: 1000px;
     position: absolute;
     top: 0;
     right: 0;
@@ -602,258 +948,125 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(15px);
-    /* z-index: -1; */
+    z-index: -1;
   }
-  
-  form{
-    width: 400px;
-    height: 800px !important;
+
+  .instagramm-cart {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    z-index: -1;
+  }
+
+  form {
+    width: 340px !important;
+    height: 700px !important;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px !important;
+    gap: 20px !important;
     position: absolute;
-    
-
-  } 
-
-  
-  form span{
-    width: 300px;
-    height: 30px;
-    text-align: center;
-    border: 1px solid #000;
-    padding-top: 4px;
-    color: #000;
-  }
-  
-  form input{
-  width: 300px;
-    height: 40px;
-    padding-left: 20px;
-    font-size: 18px;
-  }
-  
-  
-  
-  .freee-cart button{
-    width: 300px;
-    height: 50px;
-    background-color: #1e1e1e;
-    border: none;
-    border-radius: 15px;
-  
-  
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  
-  .instagramm-cart button{
-    width: 300px;
-    height: 50px;
-    background-color: #1e1e1e;
-    border: none;
-    border-radius: 15px;
-  
-  
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-  
-  }
-  
-  .pubgg-cart button{
-    width: 300px;
-    height: 50px;
-    background-color: #1e1e1e;
-    border: none;
-    border-radius: 15px;
-  
-  
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-  
-  }
-  
-  .telegramm-cart button{
-    width: 300px;
-    height: 50px;
-    background-color: #1e1e1e;
-    border: none;
-    border-radius: 15px;
-  
-  
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  
-  /* Basket end */
-  
-  
-  @media (max-width:480px) {
-  
-    .pubgg-cart{
-      width: 100%;
-      height: 1100px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      backdrop-filter: blur(15px);
-      z-index: -1;
-    
-      color: #000;
-    }
-    
-    .freee-cart{
-      width: 100%;
-      height: 1000px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      backdrop-filter: blur(15px);
-      z-index: -1;
-    }
-    
-    .telegramm-cart{
-      width: 100%;
-      height: 1000px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      backdrop-filter: blur(15px);
-      z-index: -1;
-    }
-    
-    .instagramm-cart{
-      width: 100%;
-      height: 1000px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      backdrop-filter: blur(15px);
-      z-index: -1;
-    }
-    
-    form{
-      width: 340px !important;
-      height: 700px !important;
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px !important;
-      position:absolute ;
-      top: 100px;
-    }
-    
-    .pay{
-      width: 340px !important;
-      height: 600px !important;
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px !important;
-      position:absolute ;
-      top: 100px;
-    }
-    
-    form input{
-    width: 300px !important;
-      height: 40px !important;
-      padding-left: 20px;
-      font-size: 14px !important;
-    }
-    
-    
-    
-    .freee-cart button{
-      width: 300px;
-      height: 60px;
-      background-color: #1e1e1e;
-      border: none;
-      border-radius: 15px;
-    
-    
-      color: #fff;
-      font-size: 22px;
-      cursor: pointer;
-    }
-    
-    .instagramm-cart button{
-        width: 300px;
-        height: 60px;
-      background-color: #1e1e1e;
-      border: none;
-      border-radius: 15px;
-    
-    
-      color: #fff;
-      font-size: 22px;
-      cursor: pointer;
-    
-    }
-    
-    .pubgg-cart button{
-        width: 300px;
-        height: 60px;
-      background-color: #1e1e1e;
-      border: none;
-      border-radius: 15px;
-    
-    
-      color: #fff;
-      font-size: 22px;
-      cursor: pointer;
-    
-    }
-    
-    .telegramm-cart button{
-        width: 300px;
-        height: 60px;
-      background-color: #1e1e1e;
-      border: none;
-      border-radius: 15px;
-    
-    
-      color: #fff;
-      font-size: 22px;
-      cursor: pointer;
-    }
-    
-    
+    top: 100px;
   }
 
-  .karta{
+  .pay {
+    width: 340px !important;
+    height: 600px !important;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px !important;
+    position: absolute;
+    top: 100px;
   }
 
-  .karta span{
-    width: 300px;
-    height: 30px;
-    text-align: center;
-    border: 1px solid #000;
-    padding-top: 4px;
-    color: #000;
+  form input {
+    width: 300px !important;
+    height: 40px !important;
+    padding-left: 20px;
+    font-size: 14px !important;
   }
+
+
+
+  .freee-cart button {
+    width: 300px;
+    height: 60px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+
+
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .instagramm-cart button {
+    width: 300px;
+    height: 60px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+
+
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+
+  }
+
+  .pubgg-cart button {
+    width: 300px;
+    height: 60px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+
+
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+
+  }
+
+  .telegramm-cart button {
+    width: 300px;
+    height: 60px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+
+
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+
+}
+
+.karta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.karta span {
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #000;
+  padding-top: 4px;
+  color: #000;
+}

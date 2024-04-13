@@ -141,14 +141,14 @@ export function Pubg() {
     <>
       <ToastContainer />
       <div className='Pubg'>
-      <table border={1}>
-      <thead>
-          <tr>
-          <th>Murojaat uchun:   Telefon raqam: +998 93 217 08 15  </th>
-          <th>Murojaat uchun:   Telegram orqali: @azwebdanater  </th>
-          </tr>
-      </thead>
-      </table>
+        <table border={1}>
+          <thead>
+            <tr>
+              <th>Murojaat uchun:   Telefon raqam: +998 93 217 08 15  </th>
+              <th>Murojaat uchun:   Telegram orqali: @azwebdanater  </th>
+            </tr>
+          </thead>
+        </table>
         <table border={1}>
           <thead>
             <tr>
@@ -170,7 +170,7 @@ export function Pubg() {
           </tbody>
         </table>
 
-       
+
 
         <div className="pubgg-cart">
           <form onSubmit={handleSubmit}>
@@ -202,6 +202,13 @@ export function Pubg() {
                 onChange={handlechange}
               />
             </label>
+
+            <div className="karta">
+              <span>Miqdori: {formdata.miqdor} uc</span>
+              <span>Narxi: {formdata.narx} USD</span>
+              <span>Karta raqam: 9860 0801 8648 5357</span>
+
+            </div>
             <span>To'lov chekini kiriting  </span>
             <label>
               <input
@@ -211,12 +218,6 @@ export function Pubg() {
               />
             </label>
 
-            <div className="karta">
-              <span>Miqdori: {formdata.miqdor}</span>
-              <span>Narxi: {formdata.narx}</span>
-              <span>Karta raqam: 9860 0801 8648 5357</span>
-
-            </div>
             <button type="submit" onClick={() => { document.querySelector('.pubgg-cart').style.zIndex = -1; handleSubmitPhoto() }}>Yuborish</button>
             <button type='button' onClick={handleCloseClick}>Yopish</button>
           </form>

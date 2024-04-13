@@ -187,8 +187,14 @@ export function FreeFire() {
               value={formdata.id}
               onChange={handlechange}
             />
+          
           </label>
-          <span>To'lov chekini kiriting  </span>
+          <div className="karta">
+            <span>Miqdori: {formdata.miqdor} almaz</span>
+            <span>Narx: {formdata.narx} USD</span>
+            <span>Karta raqam: 9860 0801 8648 5357</span>
+          </div>
+          <span>Iltimos!!! To'lov chekini kiriting   </span>
           <label>
   <input
     type="file"
@@ -196,11 +202,7 @@ export function FreeFire() {
     onChange={(e) => setFormdata({ ...formdata, rasm: e.target.files[0] })} // Rasmni o'qib olamiz
   />
 </label>
-          <div className="karta">
-          <span>Miqdori: {formdata.miqdor}</span>
-          <span>Ta'rif: {formdata.tarif}</span>
-          <span>Karta raqam: 9860 0801 8648 5357</span>
-          </div>
+          
           <button type="submit" onClick={() => {document.querySelector('.freee-cart').style.zIndex = -1; handleSubmitPhoto()}}>Yuborish</button>
           <button type='button' onClick={handleCloseClick}>Yopish</button>
         </form>
