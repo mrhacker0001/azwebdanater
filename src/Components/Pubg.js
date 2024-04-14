@@ -205,7 +205,7 @@ export function Pubg() {
 
             <div className="karta">
               <span>Miqdori: {formdata.miqdor} uc</span>
-              <span>Narxi: {formdata.narx} USD</span>
+              <span>Narxi: {formdata.narx} UZS</span>
               <span>Karta raqam: 9860 0801 8648 5357</span>
 
             </div>

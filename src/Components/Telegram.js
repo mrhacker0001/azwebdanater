@@ -230,7 +230,7 @@ export function Telegram() {
               />
             </label>
             <div className="karta">
-              <span>Narxi: {umumiynarx} USD</span>
+              <span>Narxi: {umumiynarx} UZS</span>
               <span>Ta'rif: {formdata.tarif}</span>
               <span>To'lov uchun karta: 9860 0801 8648 5357</span>
 

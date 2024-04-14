@@ -191,7 +191,7 @@ export function FreeFire() {
           </label>
           <div className="karta">
             <span>Miqdori: {formdata.miqdor} almaz</span>
-            <span>Narx: {formdata.narx} USD</span>
+            <span>Narx: {formdata.narx} UZS</span>
             <span>Karta raqam: 9860 0801 8648 5357</span>
           </div>
           <span>Iltimos!!! To'lov chekini kiriting   </span>
