@@ -11,7 +11,7 @@ export function Instagram() {
     { id: 7, miqdor: 1000, tarif: "Tezkor", narx: 10000 },
     { id: 8, miqdor: 1000, tarif: "Mix", narx: 10000 },
     { id: 9, miqdor: 1000, tarif: "Jonli odamlar", narx: 11000 },
-    { id: 10, miqdor: 1000, tarif: "Bezminus", narx: 15000 },
+    { id: 10, miqdor: 1000, tarif: "Bezminus", narx: 10000 },
     { id: 11, miqdor: 1000, tarif: "Ultra (1yil)", narx: 24000 },
     { id: 12, miqdor: 1000, tarif: "LIKE", narx: 3000 },
     { id: 13, miqdor: 1000, tarif: "Prosmotr", narx: 15000 },

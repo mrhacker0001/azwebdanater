@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,33 +6,33 @@
 }
 
 
-.Signup{
-width: 100%;
-height: 120vh;
-background-color: #1e1e1e;
-position: absolute;
-top: 0;
-right:0;
-bottom: 0;
-left: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.Signin{
+.Signup {
     width: 100%;
     height: 120vh;
     background-color: #1e1e1e;
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+}
 
- .form{
+.Signin {
+    width: 100%;
+    height: 120vh;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
     width: 450px;
     height: 640px;
     background-color: #d1a456;
@@ -43,7 +43,7 @@ justify-content: center;
     gap: 50px;
 }
 
-.form input{
+.form input {
     width: 400px;
     height: 70px;
     background: none;
@@ -51,11 +51,12 @@ justify-content: center;
     outline: none;
     text-align: center;
     border: 2px solid black;
-    border-radius:10px ;
+    border-radius: 10px;
 
     font-size: 22px;
 }
-.password{
+
+.password {
     width: 400px;
     height: 70px;
     display: flex;
@@ -64,7 +65,7 @@ justify-content: center;
     border-radius: 10px
 }
 
-b{
+b {
     width: 40px;
     height: 70px;
     display: flex;
@@ -73,18 +74,18 @@ b{
     cursor: pointer;
 }
 
-.password input{
+.password input {
     width: 300px;
     border: none;
 }
 
-.form span{
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
- }
+.form span {
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
 
- .form button{
+.form button {
     width: 400px;
     height: 60px;
     background: none;
@@ -97,50 +98,50 @@ b{
 }
 
 @media screen and (max-width:480px) {
-    *{
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
         font-family: sans-serif;
     }
-    
-    
-    .Signup{
-    width: 100%;
-    height: 100vh;
-    background-color: #1e1e1e;
-    position: absolute;
-    top: 0;
-    right:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-    
-    .Signin{
+
+
+    .Signup {
         width: 100%;
         height: 100vh;
         background-color: #1e1e1e;
         position: absolute;
         top: 0;
-        right:0;
+        right: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        }
-    
-     .form{
+    }
+
+    .Signin {
+        width: 100%;
+        height: 100vh;
+        background-color: #1e1e1e;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
         width: 350px !important;
         height: 580px !important;
         background-color: #d1a456;
-        display: flex ;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 50px;
     }
-    
-    .form input{
+
+    .form input {
         width: 300px !important;
         height: 50px !important;
         background: none;
@@ -148,11 +149,12 @@ b{
         outline: none;
         text-align: center;
         border: 2px solid black;
-        border-radius:10px ;
-    
+        border-radius: 10px;
+
         font-size: 17px;
     }
-    .password{
+
+    .password {
         width: 300px;
         height: 50px;
         display: flex;
@@ -160,36 +162,36 @@ b{
         border: 2px solid black;
         border-radius: 10px
     }
-    
-    b{
-       width: 100px;
-       height: 50px;
+
+    b {
+        width: 100px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
     }
-    
-    .password input{
+
+    .password input {
         width: 200px !important;
         border: none;
         text-align: center;
     }
-    
-    .form span{
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-     }
-    
-     .form button{
+
+    .form span {
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .form button {
         width: 300px;
         height: 50px;
         background: none;
         border: 2px solid green;
         border-radius: 20px;
         cursor: pointer;
-    
+
         color: #fff;
         font-size: 24px;
     }
